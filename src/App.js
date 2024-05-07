@@ -1,24 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from "styled-components";
+import "./App.css";
+import {
+  HookState,
+  ListComponent,
+  InputBox,
+  ToggleSwitch,
+  StopWatch,
+  DynamicBackground,
+  ApiFetchData,
+  DynamicForm
+} from "./beginner";
+import { UseData } from "./context/DataContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UseData>
+      <div className="App">
+        <h1>Level-1</h1>
+        <HookState />
+        <hr />
+
+        <h1>Level -2</h1>
+        <InputBox />
+        <hr />
+
+        <h1>Level -3</h1>
+        <ListComponent />
+        <hr />
+
+        <h1>Level -4</h1>
+        <ToggleSwitch />
+        <hr />
+
+        <h1>Level -5</h1>
+        <StopWatch />
+        <hr />
+        
+        <h1>Level -6</h1>
+        <DynamicBackground />
+        <hr />
+
+        <h1>Level -7</h1>
+        <ApiFetchData />
+        <hr />
+
+        <h1>Level -8</h1>
+        <DynamicForm />
+        <hr />
+
+      </div>
+    </UseData>
   );
 }
 
