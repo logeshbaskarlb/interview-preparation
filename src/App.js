@@ -11,6 +11,9 @@ import {
   DynamicForm
 } from "./beginner";
 import { UseData } from "./context/DataContext";
+import FetchingDataBreeds from "./beginner/FecthibgDataBredds";
+import DistrictManager from "./beginner/Districtmanager";
+import TodoApp from "./beginner/Todo";
 
 function App() {
   return (
@@ -46,6 +49,18 @@ function App() {
 
         <h1>Level -8</h1>
         <DynamicForm />
+        <hr />
+
+        <h1>Level -9</h1>
+        <FetchingDataBreeds />
+        <hr />
+
+        <h1>Level -9</h1>
+        <DistrictManager />
+        <hr />
+
+        <h1>Level -9</h1>
+        <TodoApp />
         <hr />
 
       </div>

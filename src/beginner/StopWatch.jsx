@@ -20,7 +20,7 @@ const StopWatch = () => {
 
     const handleStart = () =>{
         if (!isRunning) {
-            const startTime = Date.now() - elapsedTime
+            const startTime = Date.now() - elapsedTime;
             intervalRef.current = setInterval(()=>{
                 const now = Date.now()
                 setelapsedTime(now-startTime)

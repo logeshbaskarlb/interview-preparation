@@ -20,7 +20,7 @@ const InputBox = () => {
       value={input}/>
       <button 
       className=' bg-rose-500 text-white gap-2 p-2 rounded-md'
-      onClick={()=> alert(data)} >Submit</button>
+      onClick={()=> console.log(data)} >Submit</button>
       <h1>{input}</h1>
     </div>
   )
